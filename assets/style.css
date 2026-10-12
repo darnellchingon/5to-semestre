@@ -5,6 +5,35 @@
 .fondo-gris {
     background-color: lightgray;
 }
+
+.modelo-cajas {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.enlaces-ejemplo a {
+    display: block;
+}
+
+.caja-negra {
+    margin: 30px 0;
+    padding: 60px 26px;
+    background-color: #000;
+    color: #fff;
+}
+
+.caja-roja {
+    margin: 30px 8px 38px;
+    padding: 8px;
+    border: 9px solid #f23326;
+    border-radius: 18px;
+    background-color: #f23326;
+    box-shadow: inset 0 0 0 8px #fff;
+}
+
+.comidas-favoritas li:first-child {
+    background-color: #fffb3b;
+}
+
 nav a:hover {
     color: red;
     text-decoration: underline;
