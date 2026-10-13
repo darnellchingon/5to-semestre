@@ -7,6 +7,18 @@
 			"command": "python3 -m http.server 8001",
 			"isBackground": true,
 			"problemMatcher": []
+		},
+		{
+			"label": "Serve website locally",
+			"type": "shell",
+			"command": "python3",
+			"args": [
+				"-m",
+				"http.server",
+				"8000"
+			],
+			"isBackground": true,
+			"problemMatcher": []
 		}
 	]
 }
