@@ -1,115 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="assets/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hola mundo</title>
+    <title>Inicio | Mi sitio</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body id="arriba">
+    <header>
+        <nav class="enlaces-ejemplo">
+            <a href="index.html">Inicio</a>
+            <a href="views/about.html">Acerca del proyecto</a>
+            <a href="views/work.html">Formulario de registro</a>
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Ir a Google</a>
+        </nav>
+    </header>
+
+    <section class="fondo-actividad">
+        <div>
+            <h1>Actividad de fondo</h1>
+            <p>Imagen de fondo centrada, sin repetición y ajustada al contenedor.</p>
+        </div>
+    </section>
 
     <main class="modelo-cajas">
-        <nav class="enlaces-ejemplo">
-            <a href="views/about.html">Ir a bio</a>
-            <a href="https://www.google.com">Ir a google</a>
-        </nav>
+        <section>
+            <h1>Hola mundo</h1>
+            <p class="caja-negra"><em>Bienvenido a mi sitio personal.</em> Aquí muestro una pequeña presentación con información, contactos y gustos para que la página se vea más clara y completa.</p>
+        </section>
 
-        <p class="caja-negra"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</em> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <section>
+            <h2>Comidas favoritas</h2>
+            <ul class="comidas-favoritas">
+                <li><del>Chilaquiles</del></li>
+                <li>Pizza</li>
+                <li>Pozole</li>
+            </ul>
+        </section>
 
-        <p class="caja-roja">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <section>
+            <p class="caja-roja">Este bloque sirve como ejemplo de estilo con borde, sombra y fondo, y ayuda a mejorar la presentación visual del contenido principal.</p>
+        </section>
 
-        <p class="caja-roja">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <section>
+            <h2>Información básica</h2>
+            <p class="fondo-azul">Este es un texto de <strong>ejemplo en negrita</strong>, <em>itálica</em>, <del>tachado</del>, <ins>subrayado</ins> y <mark>marcado</mark>.</p>
 
-        <h2>Comidas favoritas</h2>
-        <ul class="comidas-favoritas">
-            <li><del>Chilaquiles</del></li>
-            <li>Pizza</li>
-            <li>Pozole</li>
-        </ul>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Ciudad</th>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>25</td>
+                    <td>Ciudad de México</td>
+                </tr>
+                <tr>
+                    <td>María</td>
+                    <td>30</td>
+                    <td>Guadalajara</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Contacto</h2>
+            <a href="mailto:correo@ejemplo.com">Enviar correo</a>
+            <br>
+            <a href="tel:+526121234567">Llamar por teléfono</a>
+            <br>
+            <iframe
+                title="Mapa de Ciudad de México"
+                src="https://www.google.com/maps?q=Ciudad+de+Mexico&output=embed"
+                width="600"
+                height="450"
+                style="border:0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <section>
+            <h2>Mis pasatiempos</h2>
+            <ul>
+                <li>Jugar videojuegos</li>
+                <li>Escuchar música</li>
+                <li>Ver películas</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Mis comidas favoritas</h2>
+            <ol>
+                <li>Tacos</li>
+                <li>Pizza</li>
+                <li>Hamburguesas</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Imagen</h2>
+            <img src="images/saul.jpg" alt="Retrato de ejemplo" title="Esta es una imagen de ejemplo">
+        </section>
+
+        <section>
+            <h2>Otra sección</h2>
+            <p class="fondo-gris">Esta es otra sección de la página y queda bien con el estilo general.</p>
+        </section>
+
+        <section>
+            <h2>Ejemplo de código HTML</h2>
+            <pre><code>&lt;h1&gt;Hola mundo&lt;/h1&gt;</code></pre>
+        </section>
     </main>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="views/work.html">Formulario de registro</a></li>
-            <li><a href="views/about.html">Acerca del proyecto</a></li>
-        </ul>
-    </nav>
-
-    <h1>Hola mundo</h1>
-    <p class="fondo-azul">Este es un texto de <strong>ejemplo en negrita</strong>, <em>itálica</em>, <del>tachado</del>, <ins>subrayado</ins> y <mark>marcado</mark>.</p>
-    <table>
-        <tr>
-            <th>Nombre</th>
-            <th>Edad</th>
-            <th>Ciudad</th>
-        </tr>
-        <tr>
-            <td>Juan</td>
-            <td>25</td>
-            <td>Ciudad de Mexico</td>
-        </tr>
-        <tr>
-            <td>Maria</td>
-            <td>30</td>
-            <td>Guadalajara</td>
-        </tr>
-    </table>
-
-    <h2>Contacto</h2>
-
-    <a href="mailto:correo@ejemplo.com">Enviar correo</a>
-    <br>
-    <a href="tel:+526121234567">Llamar por telefono</a>
-    <br>
-    <iframe
-        title="Mapa de Ciudad de México"
-        src="https://www.google.com/maps?q=Ciudad+de+Mexico&output=embed"
-        width="600"
-        height="450"
-        style="border:0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-
-    <h2>Mis pasatiempos</h2>
-
-    <ul>
-        <li>Jugar videojuegos</li>
-        <li>Escuchar musica</li>
-        <li>Ver peliculas</li>
-    </ul>
-
-    <h2>Mis comidas favoritas</h2>
-
-    <ol>
-        <li>Tacos</li>
-        <li>Pizza</li>
-        <li>Hamburguesas</li>
-    </ol>
-
-    <h2>Imagen</h2>
-
-    <img src="imagen.jpg" alt="Imagen de ejemplo" title="Esta es una imagen de ejemplo">
-
-    <h2>Otra seccion</h2>
-
-    <p class="fondo-gris">Esta es otra seccion de la pagina.</p>
-
-    <h2>Ejemplo de codigo HTML</h2>
-    <pre><code>&lt;h1&gt;Hola mundo&lt;/h1&gt;</code></pre>
-
-    <a href="#arriba">Ir arriba</a>
-
-
-    <a href="views/work.html">Ver página de trabajo
-
-        
-    </a>
-    <br>
-    <a href="views/about.html">Conocer más sobre el proyecto</a>
-
+    <footer>
+        <a href="#arriba">Ir arriba</a>
+        <br>
+        <a href="views/work.html">Ver página de trabajo</a>
+        <br>
+        <a href="views/about.html">Conocer más sobre el proyecto</a>
+    </footer>
 </body>
 </html>
