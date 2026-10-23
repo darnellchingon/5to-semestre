@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Bufete de Abogados Irán el Ineficiente</title>
+    <link rel="stylesheet" href="../assets/abogados.css">
 </head>
 <body>
     <header>
-    <nav>
+    <nav id="menu">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="about.html">Nosotros</a></li>
@@ -20,7 +21,7 @@
         </ul>
     </nav>
     </header>
-    <main>
+    <main class="contenido">
         <section>
 <h1>Contacto</h1>
     <p>Si desea ponerse en contacto con nuestro despacho de abogados, puede hacerlo a través de los siguientes medios:</p>
@@ -29,6 +30,20 @@
         <li>Email: gglacarrera@gmail.com</li>
         <li>Dirección: Calle Falsa 123, Ciudad, País</li>
     </ul>
+
+    <h2>Envíanos un mensaje</h2>
+    <form novalidate>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="text" id="correo" name="correo">
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+
+        <button type="button">Enviar</button>
+    </form>
 
    <iframe
         title="Mapa de Ciudad de México"
