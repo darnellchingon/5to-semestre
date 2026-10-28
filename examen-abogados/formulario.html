@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../assets/abogados.css">
+    <script src="../assets/formulario.js" defer></script>
+</head>
+<body>
+    <main class="formulario-pagina">
+        <form class="formulario-registro" id="formulario-registro" autocomplete="off">
+            <label for="nombres">Nombre(s)</label>
+            <input id="nombres" name="nombres" type="text" onkeypress="return permitirLetras(event)" required>
+
+            <label for="apellidos">Apellido(s)</label>
+            <input id="apellidos" name="apellidos" type="text" onkeypress="return permitirLetras(event)" required>
+
+            <label for="telefono">Teléfono</label>
+            <input id="telefono" name="telefono" type="tel" onkeypress="return permitirNumeros(event)" required>
+
+            <label for="correo">Correo electrónico</label>
+            <input id="correo" name="correo" type="email" onkeypress="return permitirCorreo(event)" required>
+
+            <label for="genero">Género</label>
+            <select id="genero" name="genero" required>
+                <option value="">Selecciona una opción</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Otro">Otro</option>
+            </select>
+
+            <label for="biografia">Biografía</label>
+            <textarea id="biografia" name="biografia" rows="5" maxlength="300"></textarea>
+            <p class="contador-biografia"><span id="contador">0</span>/300</p>
+
+            <button type="submit">Guardar cambios</button>
+        </form>
+    </main>
+</body>
+</html>

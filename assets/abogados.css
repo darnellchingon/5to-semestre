@@ -164,3 +164,55 @@ footer a {
         padding: 16px;
     }
 }
+
+.formulario-pagina {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.formulario-registro {
+    width: 100%;
+    max-width: 420px;
+    margin: 0;
+    padding: 24px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 18px #17324d1a;
+}
+
+.formulario-registro label {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.formulario-registro input,
+.formulario-registro textarea,
+.formulario-registro select {
+    display: block;
+    width: 100%;
+    margin: 6px 0;
+    padding: 10px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.formulario-registro textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.formulario-registro button {
+    margin-top: 12px;
+    border-radius: 4px;
+}
+
+.contador-biografia {
+    color: #555;
+    font-size: 12px;
+    text-align: right;
+}
